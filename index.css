@@ -1,0 +1,236 @@
+@font-face {
+    font-family: Regular;
+    src: url(/fonts/GeneralSans-Regular.ttf);
+}
+@font-face {
+    font-family: Medium;
+    src: url(/fonts/GeneralSans-Medium.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-family: "GeneralSans"; */
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+#miniCircle{
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    z-index: 99999;
+    position:absolute;
+    border-radius: 50%;
+}
+#main{
+    width: 100%;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+#nav_bar{
+    color: white;
+    margin-left: 8vh;
+    margin-top: 8vh;
+    width: 100%;
+}
+#nav_bar a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-family: Regular;
+}
+#heading{
+    margin-top: 15vh;
+}
+#heading h1{
+    font-size: 9vw;
+    opacity: 0.7;
+    margin-left: 8vh;
+    font-family: Medium;
+    text-transform: uppercase;
+    line-height: 1;
+}
+#heading #heading2{
+    margin-left: 13vw;
+}
+.blockText{
+    width: fit-content;
+}
+.blockText h3{
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Medium;
+    font-size: 2.4vh;
+}
+#sub_headings{
+    margin-top: 7vh;
+    padding-right: 5vw;
+}
+#sub_headings h3{
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 1vh;
+    letter-spacing: 1px;
+    font-family: Regular;
+}
+
+#home_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    margin-top: 15vh;
+}
+
+#previous_company_link{
+    color: white;
+    text-decoration: none;
+    font-size: 2.3vh;
+    margin-left: 8vh;
+    text-transform: uppercase;
+    font-family: Regular;
+}
+
+#iconSet{
+    display: flex;
+    gap: 0.3vw;
+    margin-right: 5vw;
+}
+
+#iconSet .circle{
+    width: 2.3vw;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #888;
+    
+}
+#projects{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding-top: 13vh;
+    padding-right: 10vw;
+}
+.project{
+    position: relative;
+    padding: 2vw 1vw;
+    border-top: 1px solid #888;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0;
+}
+.project h1{
+    padding: 2vh 3vw;
+    font-size: 7vw;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-family: Medium;
+}
+.project h3{
+    padding-right: 0;
+    font-family: Regular;
+}
+#projectLast{
+    border-bottom: 1px solid #888;
+}
+.project img{
+    position: absolute;
+    z-index: 999;
+    height: 180%;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+}
+#projectLast img{
+    height: 180%;
+    width: 33%;
+}
+#about{
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    color: white;
+    padding: 10vw 10vw;
+    padding-left: 40vw;
+    gap: 4.5vw;
+    padding-right: 10vw;
+}
+#img_about{
+    width: 15vw;
+    border-radius: 50%;
+}
+#txt_about h4{
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 1.2vh;
+    font-family: Regular;
+}
+#txt_about p{
+    line-height: 1.5;
+    margin-bottom: 3.7vh;
+    font-size: 2.2vh;
+    font-family: Regular;
+}
+#txt_about a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2vw;
+    padding: 1vw;
+    font-family: Regular;
+    display: inline-block;
+}
+#txt_about a:hover{
+    transform: scale(1.2);
+}
+#footer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+#part1{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding-left: 3vw;
+    padding-bottom: 2vw;
+    font-family: Regular;
+}
+#part1 h4{
+    font-size: 2.3vh;
+}
+#part2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding-right: 3vw;
+    padding-bottom: 2vw;
+    font-family: Regular;
+}
+#part2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.3vh;
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="locomotive.css">
+</head>
+<body>
+    <!-- A small circle which will always follow the cursor -->
+    <div id="miniCircle"></div>
+    <!-- A main div which will contain all my body elements, could have done it directly but making it more organized -->
+    <div id="main">
+        <!-- Will contain my home screen which will take the entire height of the screen -->
+        <div id="home">
+            <!-- Navigation Bar -->
+            <nav id="nav_bar">
+                <a target="_blank" href="https://www.linkedin.com/in/adithya-thirumalai-35299a1b2/">Adithya Thirumalai</a>
+            </nav>
+            <!-- Main heading -->
+            <div id="heading">
+                <h1>Software</h1>
+                <div class="blockText">
+                    <h1 id="heading2">Developer</h1>
+                    <h3>Based in Mumbai,India</h4>
+                </div>
+            </div>
+            <!-- Sub headings -->
+            <div id="sub_headings">
+                <h3>available for work</h3>
+                <h3>joining: Immediate</h3>
+            </div>
+            <div id="home_footer">
+                <!-- <a href="#" id="previous_company_link">Previously worked at Accenture</a> -->
+                <h3 id="previous_company_link">Previously worked at accenture</h3>
+                <div id="iconSet">
+                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                </div>
+            </div>
+        </div>
+        <!-- Has all the project details -->
+        <div id="projects">
+            <div class="project">
+                <img src="images/Android.jpg" alt="">
+                <h1>Project 1</h1>
+                <h4>2022</h4>
+            </div>
+            <div class="project">
+                <img src="images/Retro.JPG" alt="">
+                <h1>Project 2</h1>
+                <h4>2022</h4>
+            </div>
+            <div class="project" id="projectLast">
+                <img src="images/Keeper.png" alt="">
+                <h1>Project 3</h1>
+                <h4>2022</h4>
+            </div>
+        </div>
+        <!-- About me section -->
+        <div id="about">
+            <div id="txt_about">
+                <h4>(about me)</h4>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestiae harum ipsam, eligendi impedit aperiam magnam earum voluptatem laudantium doloribus consequatur maxime. Amet fugit rerum assumenda. Ipsam illum, quisquam, maxime explicabo esse vero officia quas id ab quia repellendus quidem repudiandae quos assumenda dolor pariatur, autem suscipit est aut corporis voluptatem. Vitae neque ut, molestiae ipsam nostrum, expedita quas non recusandae assumenda adipisci perferendis doloremque consequatur doloribus quisquam cum. Doloribus nemo veritatis blanditiis iste maiores labore expedita, illum, voluptates veniam harum ipsam soluta, voluptatibus est ut quaerat voluptate sed numquam delectus totam error. Accusamus, dolorum? Consectetur distinctio voluptas dolorum nesciunt?</p>
+                <a href="mailto:tadithya99@gmail.com">Let's Talk</a>
+            </div>   
+        </div>
+        <!-- Footer section, contains all the links -->
+        <div id="footer">
+            <div id="part1">
+                <h4>2023 <i class="ri-copyright-line"></i></h4>
+                <h4 id="time"></h4>
+            </div>
+            <div id="part2">
+                <a href="Project_pics/proj2_1.png" download>RESUME <i class="ri-file-download-line"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/adithya-thirumalai-35299a1b2/">LINKEDIN</a>
+                <a target="_blank" href="https://github.com/adithyaThirumalai1">GITHUB</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
