@@ -87,8 +87,33 @@ function startTime(){
     let m=today.getMinutes();
     let s=today.getSeconds();
 
-    document.getElementById("time").innerHTML=h+":"+m+":"+s+" IST";
+    let temp=h+":"+m+":"+s;
+    temp=convertTo12HourFormat(temp);
+
+    document.getElementById("time").innerHTML=temp;
     setTimeout(startTime,1000);
 } 
 startTime();
 
+// Function to convert native JS time of 24 hour cycle to 12 hour cycle
+function convertTo12HourFormat(time24) {
+    // Parse the input time string
+    const [hours, minutes, seconds] = time24.split(':').map(Number);
+  
+    // Check if the input is a valid 24-hour time
+    if (
+      isNaN(hours) || isNaN(minutes) || isNaN(seconds) ||
+      hours < 0 || hours > 23 || minutes < 0 || minutes > 59 || seconds < 0 || seconds > 59
+    ) {
+      return 'Invalid time format';
+    }
+  
+    // Convert to 12-hour format
+    const period = hours >= 12 ? 'PM' : 'AM';
+    const hours12 = hours % 12 || 12; // Convert 0 to 12
+  
+    // Format the result
+    const time12 = `${hours12}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')} ${period}`;
+  
+    return time12;
+}
