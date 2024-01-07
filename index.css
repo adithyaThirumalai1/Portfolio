@@ -17,6 +17,9 @@ body{
     height: 100%;
     background-color: black;
 }
+::selection{
+    background-color: rgb(82, 163, 186);
+}
 #miniCircle{
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     width: 10px;
@@ -333,3 +336,10 @@ body{
     font-size: 2.3vh;
 }
 
+/* Remove running clock of footer if screen width goes below 400px */
+
+@media screen and (max-width:430px){
+    #time{
+        display: none;
+    }
+}
