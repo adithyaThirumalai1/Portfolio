@@ -12,6 +12,8 @@ function circleFollow(){
 }
 circleFollow();
 
+
+
 // Animations for the first page 
 let tl=gsap.timeline();
 tl.from('#nav_bar a,#nav_bar h3',{
